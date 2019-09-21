@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "测试调试",
+            "name": "单元测试",
             "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
             "args": [
                 "--timeout",
@@ -17,6 +17,15 @@
                 "ts-node/register",
                 "${workspaceRoot}/test/index.test.ts"
             ],
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "运行调试",
+            "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+            "args": ["${workspaceRoot}/src/index.ts"],
+            "env": {},
             "internalConsoleOptions": "openOnSessionStart"
         }
     ]

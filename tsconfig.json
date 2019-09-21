@@ -1,22 +1,23 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es2017",
-        "removeComments": false,
+        "target": "es2018",
         "preserveConstEnums": false,
-        "declaration": true,
         "experimentalDecorators": false,
         "noEmitOnError": true,
         "strict": true,
         "strictPropertyInitialization": false,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true, //todo 生成`.d.ts`文件
+        "removeComments": false, //todo 删除注释
+        "jsx": "react", //todo 需要React时开启
         "lib": [
             "esnext",
-            "dom",
+            "dom", //todo 浏览器运行环境
             "dom.iterable"
         ]
     },
-    "exclude": [
-        "node_modules",
-        "bin"
-    ]
+    "exclude": ["node_modules", "bin"]
 }
