@@ -7,7 +7,7 @@
     "scripts": {
         "test": "mocha --require ts-node/register ./test/index.test.ts",
         "compile": "gulp compile",
-        "lint": "eslint --max-warnings 0 **/*"
+        "lint": "eslint --max-warnings 0 src/** test/**"
     },
     "keywords": [
         "typescript",
@@ -29,7 +29,7 @@
         "@types/lodash": "^4.14.138",
         "@types/mocha": "^5.2.7",
         "@types/node": "^12.7.5",
-        "eslint-config-sufu": "0.0.1",
+        "eslint-config-sufu": "^0.0.2",
         "expect.js": "^0.3.1",
         "gulp": "^4.0.2",
         "gulp-typescript": "^5.0.1",

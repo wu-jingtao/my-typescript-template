@@ -1,6 +1,7 @@
 *
 !src
 !src/**/*.ts
+# todo 根据需要判定是否保留tsx
 !src/**/*.tsx
 !test
 !test/**/*.ts
