@@ -1,5 +1,8 @@
 {
     //todo 二选一，如果要用到React则选下面那个
-    "extends": "sufu"
-    //"extends": "sufu/react"
+    "extends": "sufu",
+    //"extends": "sufu/react",
+    "rules": {
+        //自定义规则
+    }
 }

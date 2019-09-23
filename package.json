@@ -7,7 +7,7 @@
     "scripts": {
         "test": "mocha --require ts-node/register ./test/index.test.ts",
         "compile": "gulp compile",
-        "lint": "eslint --max-warnings 0 src/** test/**"
+        "lint": "eslint --max-warnings 0 src/**/*.ts src/**/*.tsx test/**/*.ts test/**/*.tsx"
     },
     "keywords": [
         "typescript",
