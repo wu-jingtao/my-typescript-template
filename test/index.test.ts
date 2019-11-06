@@ -1,4 +1,4 @@
-import expect = require('expect.js');
+import expect from 'expect.js';
 
 describe('测试模块', function () {
 
