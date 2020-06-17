@@ -9,20 +9,15 @@
             "request": "launch",
             "name": "单元测试",
             "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
-            "args": [
-                "--timeout",
-                "999999",
-                "--colors",
-                "--require",
-                "ts-node/register",
-                "${workspaceRoot}/test/index.test.ts"
-            ],
+            "skipFiles": ["<node_internals>/**"],
+            "args": ["--timeout", "999999", "--colors", "--require", "ts-node/register", "${workspaceRoot}/test/index.test.ts"],
             "internalConsoleOptions": "openOnSessionStart"
         },
         {
             "type": "node",
             "request": "launch",
             "name": "运行调试",
+            "skipFiles": ["<node_internals>/**"],
             "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
             "args": ["${workspaceRoot}/src/index.ts"],
             "env": {},

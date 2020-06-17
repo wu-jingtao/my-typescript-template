@@ -14,6 +14,7 @@
         "template"
     ],
     "author": "wujingtao",
+    "private": true,
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -25,19 +26,23 @@
     "homepage": "https://github.com/mx601595686/my-typescript-template#readme",
     "devDependencies": {
         "@types/expect.js": "^0.3.29",
-        "@types/lodash": "^4.14.146",
-        "@types/mocha": "^5.2.7",
-        "@types/node": "^12.12.7",
-        "eslint-config-sufu": "^0.1.4",
+        "@types/lodash": "^4.14.155",
+        "@types/mocha": "^7.0.2",
+        "@types/node": "^14.0.13",
+        "@typescript-eslint/eslint-plugin": "^3.3.0",
+        "@typescript-eslint/parser": "^3.3.0",
+        "eslint": "^7.2.0",
+        "eslint-config-sufu": "^2.0.0",
+        "eslint-plugin-react": "^7.20.0",
         "expect.js": "^0.3.1",
         "gulp": "^4.0.2",
         "gulp-typescript": "^5.0.1",
-        "mocha": "^6.2.2",
-        "ts-node": "^8.4.1",
-        "typescript": "^3.7.2"
+        "mocha": "^8.0.1",
+        "ts-node": "^8.10.2",
+        "typescript": "^3.9.5"
     },
     "dependencies": {
         "lodash": "^4.17.15",
-        "log-formatter": "^1.0.9"
+        "log-formatter": "^1.0.10"
     }
 }

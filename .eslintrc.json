@@ -1,7 +1,9 @@
 {
-    //todo 二选一，如果要用到React则选下面那个
-    "extends": "sufu",
-    //"extends": "sufu/react",
+    "extends": [
+        "sufu",
+        "sufu/typescript",
+        "sufu/react" // todo 需要用到 React 时打开
+    ],
     "rules": {
         //自定义规则
     }
