@@ -61,4 +61,4 @@ typings/
 .next
 
 # 编译后的代码不上传至Github
-/bin/
+/bin
