@@ -1,3 +1,4 @@
 # my-typescript-template
-我的typescript项目模板。
-这套模板主要是针对nodejs程序的开发。
+
+我的 typescript 项目模板。
+这套模板主要是针对 nodejs 程序的开发。

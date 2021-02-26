@@ -1,25 +1,26 @@
 {
     "compilerOptions": {
+        "allowUnreachableCode": true,                           // 这个交由 eslint 处理
+        "assumeChangesOnlyAffectDirectDependencies": true,      // 这个只能在使用模块系统时打开
+        "declaration": true,                                    //todo 生成`.d.ts`文件
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers": true,
+        "jsx": "react",                                         //todo 需要React时开启
+        "lib": [
+            "esnext",
+            "dom",                                              //todo 浏览器运行环境
+            "dom.iterable"                                      //todo 浏览器运行环境
+        ],
         "module": "commonjs",
-        "target": "es2019",
-        "preserveConstEnums": false,
-        "experimentalDecorators": false,
         "noEmitOnError": true,
+        "pretty": true,
+        "resolveJsonModule": true,
+        "removeComments": false,                                //todo 删除注释
         "strict": true,
         "strictPropertyInitialization": false,
         "skipLibCheck": true,
-        "resolveJsonModule": true,
-        "forceConsistentCasingInFileNames": true,
-        "esModuleInterop": true,
-        "pretty": true,
-        "declaration": true, //todo 生成`.d.ts`文件
-        "removeComments": false, //todo 删除注释
-        "jsx": "react", //todo 需要React时开启
-        "lib": [
-            "esnext",
-            "dom", //todo 浏览器运行环境
-            "dom.iterable"
-        ]
+        "target": "esNext"
     },
     "exclude": ["node_modules", "bower_components", "jspm_packages", "bin"]
 }
