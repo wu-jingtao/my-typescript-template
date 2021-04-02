@@ -18,12 +18,12 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/mx601595686/my-typescript-template.git"
+        "url": "git+https://github.com/wu-jingtao/my-typescript-template.git"
     },
     "bugs": {
-        "url": "https://github.com/mx601595686/my-typescript-template/issues"
+        "url": "https://github.com/wu-jingtao/my-typescript-template/issues"
     },
-    "homepage": "https://github.com/mx601595686/my-typescript-template#readme",
+    "homepage": "https://github.com/wu-jingtao/my-typescript-template#readme",
     "devDependencies": {
         "@types/expect.js": "^0.3.29",
         "@types/lodash": "^4.14.168",
