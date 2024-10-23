@@ -5,5 +5,5 @@ const ts = require('gulp-typescript').createProject('tsconfig.json');
 gulp.task('compile', function () {
     return gulp.src('src/**/*.ts')
         .pipe(ts())
-        .pipe(gulp.dest('bin'));
+        .pipe(gulp.dest('dist'));
 });

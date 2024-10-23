@@ -5,6 +5,6 @@
         "sufu/react" // todo 需要用到 React 时打开
     ],
     "rules": {
-        //自定义规则
+        // 自定义规则
     }
 }
