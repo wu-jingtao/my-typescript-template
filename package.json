@@ -19,11 +19,14 @@
     },
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
-    "files": ["dist"],
+    "files": [
+        "dist"
+    ],
     "scripts": {
-        "lint": "eslint --max-warnings 0 src/**/*.ts src/**/*.tsx test/**/*.ts test/**/*.tsx",
+        "lint": "eslint --max-warnings 0 \"src/**/*.{ts,tsx}\" \"test/**/*.{ts,tsx}\"",
         "test": "mocha --require ts-node/register './test/**/*.test.ts'",
-        "compile": "gulp compile"
+        "compile": "tsc",
+        "compile-watch": "tsc --watch"
     },
     "devDependencies": {
         "@types/expect.js": "^0.3.32",
@@ -36,8 +39,6 @@
         "eslint-config-sufu": "^2.1.5",
         "eslint-plugin-react": "^7.37.1",
         "expect.js": "^0.3.1",
-        "gulp": "^5.0.0",
-        "gulp-typescript": "^5.0.1",
         "mocha": "^10.7.3",
         "ts-node": "^10.9.2",
         "typescript": "^5.6.3"
