@@ -23,29 +23,25 @@
         "dist"
     ],
     "scripts": {
-        "lint": "eslint --max-warnings 0 \"src/**/*.{ts,tsx}\" \"test/**/*.{ts,tsx}\"",
+        "lint": "eslint --max-warnings 0 \"{src,test}/**/*.{ts,mts,cts,tsx}\"",
         "test": "mocha --require ts-node/register './test/**/*.test.ts'",
-        "compile": "tsc",
-        "compile-watch": "tsc --watch"
+        "compile": "tsc --project tsconfig.compile.json",
+        "compile-watch": "tsc --watch --project tsconfig.compile.json"
     },
     "devDependencies": {
         "@types/expect.js": "^0.3.32",
-        "@types/lodash": "^4.17.12",
+        "@types/lodash": "^4.17.13",
         "@types/mocha": "^10.0.9",
-        "@types/node": "^22.7.7",
-        "@typescript-eslint/eslint-plugin": "^8.10.0",
-        "@typescript-eslint/parser": "^8.10.0",
-        "eslint": "^9.13.0",
-        "eslint-config-sufu": "^2.1.5",
-        "eslint-plugin-react": "^7.37.1",
+        "@types/node": "^22.9.0",
+        "eslint-config-sufu": "^3.0.3",
         "expect.js": "^0.3.1",
-        "mocha": "^10.7.3",
+        "mocha": "^10.8.2",
         "ts-node": "^10.9.2",
         "typescript": "^5.6.3"
     },
     "dependencies": {
         "lodash": "^4.17.21",
-        "log-formatter": "^1.0.11",
-        "tslib": "^2.8.0"
+        "log-formatter": "^2.0.3",
+        "tslib": "^2.8.1"
     }
 }

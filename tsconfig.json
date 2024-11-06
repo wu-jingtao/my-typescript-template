@@ -13,7 +13,6 @@
          * 类型检查 (这些交由 typescript 处理)
          */
         "strict": true,
-        "strictPropertyInitialization": false,
         "exactOptionalPropertyTypes": true,
         "noImplicitOverride": true,
         "noImplicitReturns": true,
@@ -65,5 +64,4 @@
             "WebWorker",                                        // todo 浏览器运行环境
         ],
     },
-    "include": ["./src/**/*"]
 }

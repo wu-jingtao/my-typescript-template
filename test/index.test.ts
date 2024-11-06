@@ -1,7 +1,6 @@
 import expect from 'expect.js';
 
 describe('测试模块', function () {
-
     before(function () {
         // 所有测试开始之前执行
     });

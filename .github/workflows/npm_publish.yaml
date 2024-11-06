@@ -9,14 +9,15 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
+          node-version: '23.x'
           registry-url: https://registry.npmjs.org/
-          token: ${{ secrets.NPM_TOKEN }}
       - run: npm ci
       - run: npm run lint
       - run: npm run test
       - run: npm run compile
       - run: npm publish
+        env:
+            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

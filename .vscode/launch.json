@@ -5,23 +5,29 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
-            "request": "launch",
-            "name": "单元测试",
-            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
-            "skipFiles": ["<node_internals>/**"],
-            "args": ["--timeout", "999999", "--colors", "--require", "ts-node/register", "${workspaceRoot}/test/index.test.ts"],
-            "internalConsoleOptions": "openOnSessionStart"
-        },
-        {
-            "type": "node",
-            "request": "launch",
             "name": "运行调试",
-            "skipFiles": ["<node_internals>/**"],
+            "type": "node",
+            "request": "launch",
+            "internalConsoleOptions": "openOnSessionStart",
             "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+            "skipFiles": [
+                "<node_internals>/**",                  // 跳过所有 node 内部代码
+                "${workspaceFolder}/node_modules/**",   // 跳过所有 node_modules 代码
+            ],
             "args": ["${workspaceRoot}/src/index.ts"],
             "env": {},
-            "internalConsoleOptions": "openOnSessionStart"
-        }
+        },
+        {
+            "name": "测试调试",
+            "type": "node",
+            "request": "launch",
+            "internalConsoleOptions": "openOnSessionStart",
+            "skipFiles": [
+                "<node_internals>/**",                  // 跳过所有 node 内部代码
+                "${workspaceFolder}/node_modules/**",   // 跳过所有 node_modules 代码
+            ],
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "args": ["--timeout", "999999", "--colors", "--require", "ts-node/register", "${workspaceRoot}/test/index.test.ts"],
+        },
     ]
 }
