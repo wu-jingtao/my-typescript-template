@@ -29,6 +29,10 @@
         "forceConsistentCasingInFileNames": true,
         "resolveJsonModule": true,
         "importHelpers": true,                                  // 开启后必须安装 tslib 库
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"]
+        },
 
         /**
          * 启用编译缓存
@@ -53,6 +57,7 @@
         "target": "esNext",                                     // 目标 JS 版本
         "module": "CommonJS",                                   // 模块系统
         "declaration": true,                                    // todo 生成`.d.ts`文件
+        "declarationMap": true,                                 // todo 让`.d.ts`文件可以映射回`.ts`文件
         "removeComments": true,                                 // todo 删除注释
         "inlineSourceMap": false,                               // todo 添加 sourceMap
         "inlineSources": false,                                 // todo 将源代码也添加到 sourceMap 中，需配合 inlineSourceMap 一起使用
