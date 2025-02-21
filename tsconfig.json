@@ -29,16 +29,12 @@
         "forceConsistentCasingInFileNames": true,
         "resolveJsonModule": true,
         "importHelpers": true,                                  // 开启后必须安装 tslib 库
-        "baseUrl": ".",
-        "paths": {
-            "@/*": ["src/*"]
-        },
 
         /**
          * 启用编译缓存
          */
         "incremental": true,
-        "tsBuildInfoFile": ".cache/.tsbuildinfo",               // 缓存路径
+        "tsBuildInfoFile": "./node_modules/.cache/.tsbuildinfo",               // 缓存路径
 
         /**
          * 编译系统
