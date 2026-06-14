@@ -64,5 +64,9 @@
             "DOM.Iterable",                                     // todo 浏览器运行环境
             "WebWorker",                                        // todo 浏览器运行环境
         ],
+        "types": [
+            "node",
+            "mocha"
+        ]
     },
 }
